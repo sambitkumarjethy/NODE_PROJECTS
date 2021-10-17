@@ -60,7 +60,18 @@ function updateRecord(req, res) {
   );
 }
 
+
 router.get("/list", (req, res) => {
+ //  const docs =  Category.find();
+// if(docs)
+// {
+//    res.render("category/list", {
+//        list: docs,
+//    });
+// }else {
+//       console.log("Error in retrieving category list :");
+// }
+ 
   Category.find((err, docs) => {
     if (!err) {
       res.render("category/list", {
