@@ -14,3 +14,4 @@ mongoose.connect(
 
 require("./employee.model");
 require("./category.model");
+require("./product.model");
